@@ -1,0 +1,85 @@
+body{
+	color: #333;
+}
+h1.logo a span {
+    display: none;
+}
+article.homepage{
+	background-color: #003A67;
+	margin: 10px 0;
+    padding: 27px 0;
+}
+/*----------------------------------------- Footer */
+footer ul{
+	list-style: none;
+	margin: 0 auto;
+    width: 478px;
+}
+footer ul li{
+	float: left;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+footer ul li a{
+	padding-right: 5px;
+}
+footer ul li a:hover{
+	text-decoration: none;
+}
+.social-links{
+	margin: 0 auto 0; 
+    width: 157px;
+    color: #999;
+}
+.social-links p {
+    margin: 2px 0 0;
+    padding-left: 26px;
+}
+.social-links .btn{
+	border-color: #337ab7;
+	color: #337ab7;
+	margin-right: 3px;
+}
+.social-links .btn:hover, .social-links .btn:focus{
+	background-color: #337ab7;
+	color: #fff;
+}
+/*-------------------------------------------------*/
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 40px;
+  height: 40px;
+  padding: 8px 11px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 20px;
+}
+
+/* ------------------------------------------------------------------- :) */
+@media(max-width:767px){
+	footer ul{
+		width: auto;
+	}
+
+}
+@media(min-width:768px){
+	
+}
+@media(min-width:992px){
+	
+}
+@media(min-width:1200px){
+	
+}
+
+
+

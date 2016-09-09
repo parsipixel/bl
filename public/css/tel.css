@@ -1,0 +1,79 @@
+/*------------------------------------------- TEL */
+.tel{
+}
+span.tel-icon{
+	font-size: 140px;
+	margin: 0 15px;
+}
+.tel p.toll-free {
+	font-size: 12px;
+	font-style: italic;
+	padding: 10px 0 0;
+	text-align: center;
+}
+.tel h3 {
+	font: 53px Impact, MyImpact;
+	margin: 0;
+	text-align: center;
+}
+.tel h3 a{
+	color: inherit;
+}
+
+.tel.hasFloat{
+}
+.tel.hasFloat span.tel-icon{
+	font-size: 110px;
+}
+.tel.hasFloat h3, .tel.hasFloat p.toll-free{
+}
+
+/* ------------------------------------------------------------------- :) */
+@media(max-width:767px){
+	.tel h3 {
+		font: 43px Impact, MyImpact;
+		margin: 0;
+		text-align: center;
+	}
+	.tel p.from-outside {
+		font: 17px sans-serif;
+		margin: 0;
+		padding: 4px 0;
+		text-align: center;
+	}
+	
+	.slider .container {
+		background: #003a67;
+	}
+
+	h1{
+		font-size: 32px;
+	}
+	p.reservation-type{
+		font-size: 17px;
+		padding: 11px 0;
+	}
+	h2 a{
+		margin-bottom: 5px;
+		height: 68px;
+	}
+	h2 a span{
+		font-size: .52em;
+	}
+	h2 a span.fa{
+		font-size: .52em;
+	}
+
+}
+@media(min-width:768px){
+	
+}
+@media(min-width:992px){
+	
+}
+@media(min-width:1200px){
+	
+}
+
+
+

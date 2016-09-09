@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://www.blueshuttle.com</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/reservation</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/reservation/to-airport</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/reservation/from-airport</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/reservation/from-your-location-to-another</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/airports</loc>
+		<lastmod>2014-08-25</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/about-us</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+	<url>
+		<loc>http://www.blueshuttle.com/contact-us</loc>
+		<lastmod>2014-08-30</lastmod>
+	</url>
+</urlset>
