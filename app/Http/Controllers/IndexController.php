@@ -40,7 +40,7 @@ class IndexController extends Controller
             /** @var \Illuminate\Mail\Message $message */
             $message->from('blueshuttle@gmail.com', $name = 'BlueShuttle');
             $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
-            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
+//            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
             $message->replyTo($data['email'], $name = $data['name']);
             $message->subject('Contact form');
         });
