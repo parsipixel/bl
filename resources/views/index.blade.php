@@ -95,9 +95,7 @@
         <div class="clearfix"></div>
         <hr>
         <p class="text-center" style="color: #aaa; font-size: 10px;">
-            Copyright @ 2014 - All rights reserved. Designed by <a
-                    href="http://www.parsipixel.com/" title="ParsiPixel"
-                    target="_blank">ParsiPixel</a>
+            Copyright @ 2014 - All rights reserved. Designed by <a href="http://www.parsipixel.com/" title="ParsiPixel" target="_blank">ParsiPixel</a>.
         </p>
 
     </footer>

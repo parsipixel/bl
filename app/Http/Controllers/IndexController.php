@@ -37,9 +37,10 @@ class IndexController extends Controller
         unset($data['_method']);
 
         Mail::queue('emails.reservation', ['data' => $data], function ($message) use ($data) {
+            /** @var \Illuminate\Mail\Message $message */
             $message->from('blueshuttle@gmail.com', $name = 'BlueShuttle');
-//            $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
-            $message->to('nazari.dev@gmail.com', $name = 'BlueShuttle');
+            $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
+            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
             $message->replyTo($data['email'], $name = $data['name']);
             $message->subject('Contact form');
         });

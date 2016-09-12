@@ -22,5 +22,3 @@ Route::get('reservation/from-airport', ['as' => 'from', 'uses' => 'ReservationCo
 Route::get('reservation/to-airport', ['as' => 'to', 'uses' => 'ReservationController@to']);
 Route::get('reservation/from-your-location-to-another', ['as' => 'ltl', 'uses' => 'ReservationController@ltl']);
 Route::post('reservation/reserve', ['as' => 'reserve', 'uses' => 'ReservationController@sendMail']);
-
-Route::resource('rasool', 'ReservationController');

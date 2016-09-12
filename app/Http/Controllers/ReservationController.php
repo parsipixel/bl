@@ -2,32 +2,51 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
 use App\Http\Requests\ReservationRequest;
 use Illuminate\Support\Facades\Mail;
 
+/**
+ * Class ReservationController
+ * @package App\Http\Controllers
+ */
 class ReservationController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         return view('reservation.index', ['title' => 'Online Reservation']);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function from()
     {
         return view('reservation.from', ['title' => 'Online Reservation / From Airport']);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function to()
     {
         return view('reservation.to', ['title' => 'Online Reservation / To Airport']);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function ltl()
     {
         return view('reservation.ltl', ['title' => 'Online Reservation / From your location to location']);
     }
 
+    /**
+     * @param ReservationRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function sendMail(ReservationRequest $request)
     {
         $data = $request->input();
@@ -35,9 +54,10 @@ class ReservationController extends Controller
         unset($data['_method']);
 
         Mail::queue('emails.reservation', ['data' => $data], function ($message) use ($data) {
+            /** @var \Illuminate\Mail\Message $message */
             $message->from('blueshuttle@gmail.com', $name = 'BlueShuttle');
-//            $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
-            $message->to('nazari.dev@gmail.com', $name = 'BlueShuttle');
+            $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
+            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
             $message->replyTo($data['email'], $name = $data['name']);
             $message->subject('Online Reservation ' . $data['type']);
         });
