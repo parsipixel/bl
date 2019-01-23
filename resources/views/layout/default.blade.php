@@ -23,8 +23,8 @@
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
     {{-- Date Picker --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css">--}}
+    {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>--}}
 
     <title>{{ $title }} | Blue Shuttle - Online Reservations | Airport Shuttle, SFO, SJC, OAK Airport </title>
     <!--[if lt IE 9]>
