@@ -15,11 +15,11 @@
         {{ csrf_field() }}
         <input type="hidden" name="type" value="FLTA" id="ReservationType"/>
 
-        @include('reservation.partials.forms.personal-information')
-        @include('reservation.partials.forms.your-address')
-        @include('reservation.partials.forms.pickup-information')
-        @include('reservation.partials.forms.destination-address')
-        @include('reservation.partials.forms.other-information')
+        @include('reservation.partials.form-field-sets.personal-information')
+        @include('reservation.partials.form-field-sets.your-address')
+        @include('reservation.partials.form-field-sets.pickup-information')
+        @include('reservation.partials.form-field-sets.destination-address')
+        @include('reservation.partials.form-field-sets.other-information')
 
         <div class="text-center"><input value="Submit" class="btn btn-primary btn-lg" type="submit"/></div>
     </form>

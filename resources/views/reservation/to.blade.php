@@ -15,10 +15,10 @@
         {{ csrf_field() }}
         <input type="hidden" name="type" value="To Airport" id="ReservationType"/>
 
-        @include('reservation.partials.forms.personal-information')
-        @include('reservation.partials.forms.your-address')
-        @include('reservation.partials.forms.destination-airport')
-        @include('reservation.partials.forms.other-information')
+        @include('reservation.partials.form-field-sets.personal-information')
+        @include('reservation.partials.form-field-sets.your-address')
+        @include('reservation.partials.form-field-sets.destination-airport')
+        @include('reservation.partials.form-field-sets.other-information')
 
         <div class="text-center"><input value="Submit" class="btn btn-primary btn-lg" type="submit"/></div>
     </form>
