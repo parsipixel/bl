@@ -16,3 +16,4 @@ bootstrap/cache/
 
 # IDE
 .idea
+_ide_helper*
