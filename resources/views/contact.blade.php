@@ -4,7 +4,7 @@
     <h2>Contact us</h2>
     <div class="container">
 
-    @include('layout.partials.message')
+        @include('layout.partials.message')
         <p style="border-bottom: 1px dashed #eee; padding: 27px 0; margin-bottom: 27px;">
             For further assistance, concerns, comments, questions and to create a
             Corporate Account, please call us at:
@@ -33,32 +33,44 @@
 
         <div class="contact-form col-md-7">
             <form action="{{ route('post.contact-us') }}" class="form-horizontal clearfix" role="form" id="ContactUsIndexForm" method="post" accept-charset="utf-8">
-                {{ csrf_field() }}
 
-                <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+                {{ csrf_field() }}
                 <fieldset>
                     <legend>Contact us</legend>
+
                     <div class="form-group required">
-                        <label for="ContactUsName" class="col-md-5 control-label">Name</label>
-                        <input name="name"
-                               class="" type="text"
-                               id="ContactUsName"
-                               required="required"/></div>
+                        <label for="ContactUsName" class="col-md-5 col-form-label text-right">Name</label>
+                        <div class="col-sm-6 col-xs-12">
+                            <input name="name" class="form-control" type="text" id="ContactUsName" required="required"/>
+                        </div>
+                    </div>
+
                     <div class="form-group">
-                        <label for="ContactUsPhone" class="col-md-5 control-label">Phone/Mobile Number</label>
-                        <input
-                                name="phone" class="" type="tel" id="ContactUsPhone"/></div>
+                        <label for="ContactUsPhone" class="col-md-5 col-form-label text-right">Phone/Mobile Number</label>
+                        <div class="col-sm-6 col-xs-12">
+                            <input name="phone" class="form-control" type="tel" id="ContactUsPhone"/>
+                        </div>
+                    </div>
+
                     <div class="form-group required">
-                        <label for="ContactUsEmail" class="col-md-5 control-label">Email</label>
-                        <input name="email"
-                               class="" type="email"
-                               id="ContactUsEmail"
-                               required="required"/></div>
+                        <label for="ContactUsEmail" class="col-md-5 col-form-label text-right">Email</label>
+                        <div class="col-sm-6 col-xs-12">
+                            <input name="email" class="form-control" type="email" id="ContactUsEmail" required="required"/>
+                        </div>
+                    </div>
+
                     <div class="form-group required">
-                        <label for="ContactUsMessage" class="col-md-5 control-label">Message</label><textarea
-                                name="message" class="" row="5" cols="30" rows="6" id="ContactUsMessage" required="required"></textarea></div>
+                        <label for="ContactUsMessage" class="col-md-5 col-form-label text-right">Message</label>
+                        <div class="col-sm-6 col-xs-12">
+                            <textarea name="message" class="form-control" cols="30" rows="6" id="ContactUsMessage" required="required"></textarea>
+                        </div>
+                    </div>
+
                 </fieldset>
-                <div class="text-center"><input value="Submit" class="btn btn-primary btn-lg" type="submit"/></div>
+
+                <div class="text-center">
+                    <input value="Submit" class="btn btn-primary" type="submit"/>
+                </div>
             </form>
         </div>
     </div>
