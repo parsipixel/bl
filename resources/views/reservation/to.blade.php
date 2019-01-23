@@ -20,6 +20,8 @@
         @include('reservation.partials.form-field-sets.destination-airport')
         @include('reservation.partials.form-field-sets.other-information')
 
-        <div class="text-center"><input value="Submit" class="btn btn-primary btn-lg" type="submit"/></div>
+        <div class="text-center">
+            @include('reservation.partials.form-inputs.submit-button')
+        </div>
     </form>
 @endsection
