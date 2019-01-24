@@ -59,7 +59,7 @@ class ReservationController extends Controller
             $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
 //            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
             $message->replyTo($data['email'], $name = $data['name']);
-            $message->subject('Online Reservation ' . $data['type']);
+            $message->subject('Online Reservation ' . $data['type'] . ' ' . time());
         });
 
         $message = 'Your request has been submitted. <br>We will contact you shortly with a quote.
