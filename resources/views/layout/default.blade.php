@@ -22,6 +22,14 @@
     <script type="text/javascript" src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
+    @if(isset($images))
+        <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}">
+        {{--        <link rel="stylesheet" href="{{ asset('css/uikit-rtl.min.css') }}">--}}
+        <script type="text/javascript" src="{{ asset('js/uikit.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/uikit-icons.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    @endif
+
     {{-- Date Picker --}}
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css">--}}
     {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>--}}
@@ -30,6 +38,8 @@
     <!--[if lt IE 9]>
     <script src="{{ asset('js/html5shiv.min.js') }}"></script>
     <![endif]-->
+
+    @yield('extra-assets')
 </head>
 <body itemscope itemtype="http://schema.org/LocalBusiness">
 <div>

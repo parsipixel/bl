@@ -44,4 +44,7 @@
             </div>
         </div>
     </div>
+
+    @include('layout.partials.gallery')
+
 @endsection
