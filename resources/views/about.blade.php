@@ -1,6 +1,8 @@
 @extends('layout.default')
 
 @section('content')
+    @include('layout.partials.gallery')
+
     <h2>About us</h2>
 
     <p>At BLUE SHUTTLE, we provide the most reliable, affordable, and
@@ -44,7 +46,4 @@
             </div>
         </div>
     </div>
-
-    @include('layout.partials.gallery')
-
 @endsection
