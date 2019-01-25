@@ -55,10 +55,10 @@ class ReservationController extends Controller
 
         Mail::queue('emails.reservation', ['data' => $data], function ($message) use ($data) {
             /** @var \Illuminate\Mail\Message $message */
-            $message->from('blueshuttle@gmail.com', $name = 'BlueShuttle');
-            $message->to('blueshuttle@gmail.com', $name = 'BlueShuttle');
+            $message->from('do-not-reply@blueshuttle.com', 'BlueShuttle Reservation');
+            $message->to('blueshuttle@gmail.com', 'BlueShuttle');
 //            $message->cc('nazari.dev@gmail.com', $name = 'BlueShuttle');
-            $message->replyTo($data['email'], $name = $data['name']);
+            $message->replyTo($data['email'], $data['name']);
             $message->subject('Online Reservation ' . $data['type'] . ' ' . time());
         });
 
