@@ -55,14 +55,6 @@ class IndexController extends Controller
                     'thumbnail' => asset('gallery/thumbnails/blueshuttle_00005.jpg'),
                     'large' => asset('gallery/large/blueshuttle_00005.jpg'),
                     'caption' => ''
-                ], [
-                    'thumbnail' => asset('gallery/thumbnails/blueshuttle_00005.jpg'),
-                    'large' => asset('gallery/large/blueshuttle_00005.jpg'),
-                    'caption' => ''
-                ], [
-                    'thumbnail' => asset('gallery/thumbnails/blueshuttle_00005.jpg'),
-                    'large' => asset('gallery/large/blueshuttle_00005.jpg'),
-                    'caption' => ''
                 ]
             ]
         ]);
