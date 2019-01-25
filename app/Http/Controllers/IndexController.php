@@ -38,7 +38,7 @@ class IndexController extends Controller
                 [
                     'thumbnail' => asset('gallery/thumbnails/blueshuttle_00001.jpg'),
                     'large' => asset('gallery/large/blueshuttle_00001.jpg'),
-                    'caption' => 'Wedding trip in Bay Area, provided by Blue Shuttle'
+                    'caption' => ''
                 ], [
                     'thumbnail' => asset('gallery/thumbnails/blueshuttle_00002.jpg'),
                     'large' => asset('gallery/large/blueshuttle_00002.jpg'),
@@ -54,6 +54,10 @@ class IndexController extends Controller
                 ], [
                     'thumbnail' => asset('gallery/thumbnails/blueshuttle_00005.jpg'),
                     'large' => asset('gallery/large/blueshuttle_00005.jpg'),
+                    'caption' => ''
+                ], [
+                    'thumbnail' => asset('gallery/thumbnails/blueshuttle_00008.jpg'),
+                    'large' => asset('gallery/large/blueshuttle_00008.jpg'),
                     'caption' => ''
                 ]
             ]
